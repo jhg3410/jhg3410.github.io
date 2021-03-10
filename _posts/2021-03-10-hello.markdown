@@ -1,0 +1,20 @@
+
+<!-- Heading -->
+# 자기소개
+## Name :
+- **장희직**
+
+## Age:
+- *23*
+
+## Living place:
+- *dormitory*
+
+## Hobby:
+- *watching movie*
+
+## Favorite food:
+- ![image description] (https://pds.joins.com/news/
+component/htmlphoto_mmdata/201909
+/09/425b739d-f09e-49b5-8791-61209c868280.jpg)
+- *kimchi*
