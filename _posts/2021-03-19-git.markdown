@@ -1,0 +1,67 @@
+---
+layout: post
+title: "깃 사용"
+date: 2021-03-19
+comments: true
+---
+
+<!-- Heading -->
+
+## 참고 사이트:
+- <https://www.youtube.com/playlist?list=PLRx0vPvlEmdD5FLIdwTM4mKBgyjv4no81>
+- <https://ndb796.tistory.com/184?category=1029186>
+- 평소에도 찾아보는 개발자 유튜버에게 깃 강의가 있어 보면서 따라 하며 또 부족한 부분은 블로그로 마무리
+- 실제 따라 한 강의는 1, 5, 6, 7강
+
+
+## 방법:
+### 1강 
+- <https://www.youtube.com/watch?v=rhP5pseOJc0&list=PLRx0vPvlEmdD5FLIdwTM4mKBgyjv4no81&index=1>
+- 새로운 Git-Tutorial이란 repository를 만들었다 
+- 그런 다음 새로운 폴더를 만들어 Git-Tutorial을  폴더에 clone 하였다 그런다음 폴더에 새로운 문서를 만들고 
+git add -> git commit -> git push를 하여 github에 올렸다
+- 요약 : clone을 함으로서 github에 있는 파일을 내 컴퓨터로 옮기고 push를 함으로써 내 컴퓨터에서 github로 옮길 수 있다는 걸 배움
+ ![git-first-class](https://user-images.githubusercontent.com/80373033/111759659-2eda2700-88e1-11eb-8027-666390674e2f.png)
+
+
+### 5강
+- <https://www.youtube.com/watch?v=O0--D4xgAOI&list=PLRx0vPvlEmdD5FLIdwTM4mKBgyjv4no81&index=5>
+- 전에 만든 폴더의 Git-Tutorial 안에 my_module문서로 python코드(add 함수)를 작성한다
+- 그런 다음  git add -> git commit -> git push로 새로 만든 코드를 github에 올린다
+- (sub 함수)코드를 추가한 다음 checkout을 해보고 다시 코드 추가해서 github에 올린다
+- dir을 통해 현재 위치의 폴더안의 정보를 알 수 있다
+- git status를 통해 변경된 정보를 알 수 있다
+- git checkout = 변경된 정보를 무시 -> 원래 상태로 되돌림
+- git add <--> git reset
+- 요약 : 소스 코드를 수정해서 github에 올리고 또는 수정한 것을 다시 되돌리는 방법을 배움
+![화면 캡처 2021-03-20 003754](https://user-images.githubusercontent.com/80373033/111806280-2ac7fc80-8915-11eb-8470-1b0377706c74.png "5th class")
+![화면 캡처 2021-03-20 003738](https://user-images.githubusercontent.com/80373033/111806066-f2282300-8914-11eb-8580-e03225921727.png "5th class")
+
+
+### 6강
+- <https://www.youtube.com/watch?v=cnhTPpvdYiM&list=PLRx0vPvlEmdD5FLIdwTM4mKBgyjv4no81&index=6>
+- git에서 commit 내역을 수정하는 방법 알아보기
+- git pull을 통해 폴더 내용과 github내용을 통일 가능
+- my_module 문서 안에 (mul 함수) 코드를 추가시키고 git add 와 commit, push를 통해 github에 올린다
+- git log로 내역을 볼 수 있다 각 commit에는 hash값이 존재한다
+- git reset --hard hash 로 그 hash값의 commit상태로 돌아갈 수 있다. --hard는 그 이후의 내용을 삭제하는 용도, --soft는 내용 유지
+ ![6th-class163835](https://user-images.githubusercontent.com/80373033/111863646-25fc5a80-89a0-11eb-96b2-764f17d47fb4.png)
+- github에 반영하기 위해선 git push -f로 강제로 push해야한다
+ ![화면 캡처 2021-03-20 164011](https://user-images.githubusercontent.com/80373033/111863704-87242e00-89a0-11eb-98ed-51c89e36f380.png "github에서도 변경됨")
+- 이제는 commit 메시지를 변경하는 방법 알아보기
+- 그러기 위해선 git commit --amend를 사용을 하면 되지만 왜 그런지 나는 메모장으로 창이 열린다 영상에선 cmd로 열리는데 방법을 모르겠다
+- 결과적으로 다시 add, sub 함수를 추가한 다음 push해서 깃허브에 올렸다
+ ![화면 캡처 2021-03-20 003738](https://user-images.githubusercontent.com/80373033/111863679-64921500-89a0-11eb-8d0c-9ebfe1f4c70b.png)
+
+### 7강
+- <https://www.youtube.com/watch?v=I4latDqXo5M&list=PLRx0vPvlEmdD5FLIdwTM4mKBgyjv4no81&index=7>
+- 브랜치(Branch) 알아보기
+- git branch -> 현재 브랜치들의 정보 출력
+- git branch develop로 develop 브랜치를 만든다 -> git checkout develop로 브랜치를 바꾼다 
+- 그런 다음 my_module 문서 안에 mul 함수를 추가하고 add, commit을 한다 이제 master브랜치에서 merge를 할려면 다시 master브랜치로 switch한 뒤 git merge develop로 합친다
+![화면 캡처 2021-03-20 171448](https://user-images.githubusercontent.com/80373033/111863810-fdc12b80-89a0-11eb-8986-4e24e4c10c09.png)
+![화면 캡처 2021-03-20 171501](https://user-images.githubusercontent.com/80373033/111863813-0154b280-89a1-11eb-9a15-5b54b2c63baf.png)
+- push로 github에 올린다
+ ![화면 캡처 2021-03-20 171535](https://user-images.githubusercontent.com/80373033/111863838-22b59e80-89a1-11eb-9408-bd1d17288a74.png)
+- 이제 merge되어 쓸모가 없어진 develop브랜치는 git branch -d develop로 delete해준다
+ ![화면 캡처 2021-03-20 171429](https://user-images.githubusercontent.com/80373033/111863737-af139180-89a0-11eb-8d13-ba9522a30381.png)

@@ -1,0 +1,31 @@
+I">
+<!-- Heading -->
+<h1 id="자기소개">자기소개</h1>
+<h2 id="name-">Name :</h2>
+<ul>
+  <li><strong>장희직</strong></li>
+</ul>
+
+<h2 id="age">Age:</h2>
+<ul>
+  <li><em>23</em></li>
+</ul>
+
+<h2 id="living-place">Living place:</h2>
+<ul>
+  <li><em>dormitory</em></li>
+</ul>
+
+<h2 id="hobby">Hobby:</h2>
+<ul>
+  <li><em>watching movie</em></li>
+</ul>
+
+<h2 id="favorite-food">Favorite food:</h2>
+<ul>
+  <li><img src="https://pds.joins.com/news/
+component/htmlphoto_mmdata/201909/09/42
+5b739d-f09e-49b5-8791-61209c868280.jpg" alt="meat" /></li>
+  <li><em>kimchi</em></li>
+</ul>
+:ET

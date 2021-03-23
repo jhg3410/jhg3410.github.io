@@ -1,8 +1,13 @@
-
+---
+layout: post
+title: "자기소개"
+date: 2021-03-19
+comments: true
+---
 <!-- Heading -->
-# 자기소개
+
 ## Name :
-- **장희직**
+- **Jang-hee-jik**
 
 ## Age:
 - *23*
@@ -14,7 +19,5 @@
 - *watching movie*
 
 ## Favorite food:
-- ![meat](https://pds.joins.com/news/
-component/htmlphoto_mmdata/201909/09/42
-5b739d-f09e-49b5-8791-61209c868280.jpg)
+- *meat*
 - *kimchi*
